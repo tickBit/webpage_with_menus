@@ -23,6 +23,7 @@ a {
 }
 
 .menu {
+  position: relative;
   display: flex;
   gap: 20px;
   justify-content: flex-end;
@@ -31,11 +32,11 @@ a {
   height: 50px;
 }
 
-.dropdown-services {
+.dropdown-menu {
   position: relative;
-  width: 0;
-  height: 0;
-  z-index: 0;
+  top: 100%;
+  right: 140;
+  z-index: 100;
 }
 
 .dropdown-content {
@@ -44,9 +45,9 @@ a {
   border: 1px solid #f1fcff;
   display: flex;
   flex-direction: column;
-  min-width: 160px;
+  min-width: 135px;
+  top: 10px;
   height: fit-content;
-  right: -100px;
 }
 
 .dropdown-content a {
