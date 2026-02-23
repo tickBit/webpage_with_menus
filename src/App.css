@@ -1,6 +1,7 @@
 .App-header {
   background-image: linear-gradient(to right, #c7e0fd, rgb(65, 151, 250));
   color: white;
+  z-index: 0;
 }
 
 a {
@@ -28,4 +29,28 @@ a {
   align-items: center;
   margin-right: 20px;
   height: 50px;
+}
+
+.dropdown-services {
+  position: relative;
+  width: 0;
+  height: 0;
+  z-index: 0;
+}
+
+.dropdown-content {
+  position: absolute;
+  background: gainsboro;
+  border: 1px solid #f1fcff;
+  display: flex;
+  flex-direction: column;
+  min-width: 160px;
+  height: fit-content;
+  right: -100px;
+}
+
+.dropdown-content a {
+  padding: 12px 16px;
+  text-decoration: none;
+  color: black;
 }
