@@ -54,3 +54,7 @@ a {
   text-decoration: none;
   color: black;
 }
+
+.dropdown-content a:hover {
+  color: rgb(187, 94, 63);
+}
