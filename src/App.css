@@ -45,6 +45,7 @@ a {
   border: 1px solid #f1fcff;
   display: flex;
   flex-direction: column;
+  right: 5px;
   min-width: 135px;
   top: 10px;
   height: fit-content;
