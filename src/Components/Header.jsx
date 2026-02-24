@@ -1,7 +1,11 @@
+import { useState } from 'react';
 import Dropdown from './Dropdown';
+import Win from './Win';
 
 const Header = () => {
 
+  const [showAbout, setShowAbout] = useState(false);
+  
   return (
     <>
     <header className="App-header">
@@ -10,7 +14,7 @@ const Header = () => {
         </div>
         <div className="menu">
           <a href="#home">Home</a>
-          <a href="#about">About</a>
+          <a href="#about" onClick={() => setShowAbout(!showAbout)}>About</a>
           
         <Dropdown
           label="Services"
@@ -32,6 +36,8 @@ const Header = () => {
           
         </div>
       </header>
+      {showAbout && <Win title="About this web site" contents="This is an imaginary website." okButtonText="Ok" onConfirm={() => setShowAbout(!showAbout)} />}
+    
     </>
     );
   }

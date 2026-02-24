@@ -60,3 +60,25 @@ a {
 .dropdown-content a:hover {
   color: rgb(187, 94, 63);
 }
+
+.button {
+  padding: 4px;
+  margin: auto;
+}
+
+.window {
+  width: 25%;
+  height: 25%;
+  margin: auto auto;
+  position: fixed;
+  text-align: center;
+  padding: 7px;
+  border-color: black;
+  border-style: groove;
+  background-color: aliceblue;
+  color:darkgreen;
+  z-index: 1000;
+  
+  inset: 0;
+  pointer-events: all;
+}

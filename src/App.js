@@ -4,11 +4,11 @@ import Header from './Components/Header';
 function App() {
   return (
     <>
+      
       <Header />
+      <div className='page'>
       
-      <main>
-      
-      </main>
+      </div>
     </>
   );
 }
