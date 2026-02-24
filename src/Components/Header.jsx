@@ -21,8 +21,15 @@ const Header = () => {
             { label: 'Marketing', href: '#marketing' },
           ]}
         />
+          <Dropdown
+            label="Contact"
+            href="#contact"
+            items={[
+              { label: "CEO", href: "#contact/ceo" },
+              { label: "Customer service", href: "#contact/service"}
+            ]}
+          />
           
-          <a href="#contact">Contact</a>
         </div>
       </header>
     </>
