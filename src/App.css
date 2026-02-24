@@ -82,3 +82,11 @@ a {
   inset: 0;
   pointer-events: all;
 }
+
+.close {
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+  margin-left: 95%;
+  cursor: pointer;
+}

@@ -19,6 +19,7 @@ const win = (props) => {
     return (
         <>
             <div className="window">
+                <div className="close" onClick={closeWindow}>X</div>
                 <h2>{props.title}</h2>
                 <p>{props.contents}</p>
                 <button className="button" onClick={closeWindow}>{props.okButtonText}</button>
